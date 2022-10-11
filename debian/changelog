@@ -1,0 +1,133 @@
+libsejda-java (4.2.6-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>  Fri, 27 May 2022 05:02:02 -0400
+
+libsejda-java (4.2.6-1) unstable; urgency=medium
+
+  * New upstream version 4.2.6.
+  * Declare compliance with Debian Policy 4.6.0.
+  * Tighten build-dependency on libsambox-java.
+  * Ignore net.coobird:thumbnailator for now.
+  * Add disable-coobird.patch until thumbnailator has been packaged.
+
+ -- Markus Koschany <apo@debian.org>  Tue, 07 Sep 2021 09:51:15 +0200
+
+libsejda-java (4.1.7-1) unstable; urgency=medium
+
+  * New upstream version 4.1.7.
+  * Declare compliance with Debian Policy 4.5.1.
+
+ -- Markus Koschany <apo@debian.org>  Sun, 31 Jan 2021 15:56:24 +0100
+
+libsejda-java (4.1.4-1) unstable; urgency=medium
+
+  * New upstream version 4.1.4.
+
+ -- Markus Koschany <apo@debian.org>  Tue, 24 Nov 2020 00:06:28 +0100
+
+libsejda-java (4.1.2-1) unstable; urgency=medium
+
+  * New upstream version 4.1.2.
+
+ -- Markus Koschany <apo@debian.org>  Mon, 09 Nov 2020 13:18:39 +0100
+
+libsejda-java (4.1.1-2) unstable; urgency=medium
+
+  * Tighten the build-dependency on libsambox-java. (Closes: #972859)
+
+ -- Markus Koschany <apo@debian.org>  Sun, 25 Oct 2020 18:48:30 +0100
+
+libsejda-java (4.1.1-1) unstable; urgency=medium
+
+  * New upstream version 4.1.1.
+  * Switch to debhelper-compat = 13.
+  * Drop no-optional-fonts.patch. No longer necessary.
+
+ -- Markus Koschany <apo@debian.org>  Sat, 24 Oct 2020 22:53:35 +0200
+
+libsejda-java (3.2.84-2) unstable; urgency=medium
+
+  * Team upload.
+  * Depend on libgeronimo-validation-1.1-spec-java
+    instead of libgeronimo-validation-1.0-spec-java
+  * Standards-Version updated to 4.5.0
+  * Switch to debhelper level 12
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Sun, 21 Jun 2020 11:39:49 +0200
+
+libsejda-java (3.2.84-1) unstable; urgency=medium
+
+  * New upstream version 3.2.84.
+
+ -- Markus Koschany <apo@debian.org>  Tue, 10 Sep 2019 13:46:12 +0200
+
+libsejda-java (3.2.75-1) unstable; urgency=medium
+
+  * New upstream version 3.2.75.
+  * Switch to debhelper-compat = 12.
+  * Declare compliance with Debian Policy 4.4.0.
+  * Remove get-orig-source target.
+  * Tighten build-dependency on libsambox-java.
+  * Use canonical VCS URI.
+
+ -- Markus Koschany <apo@debian.org>  Sun, 21 Jul 2019 17:24:59 +0200
+
+libsejda-java (3.2.66-1) unstable; urgency=medium
+
+  * New upstream version 3.2.66.
+
+ -- Markus Koschany <apo@debian.org>  Sat, 22 Dec 2018 12:32:07 +0100
+
+libsejda-java (3.2.56-1) unstable; urgency=medium
+
+  * New upstream version 3.2.56.
+  * Build-depend on libcommons-csv-java.
+  * Declare compliance with Debian Policy 4.2.1.
+  * Switch to compat level 11.
+
+ -- Markus Koschany <apo@debian.org>  Fri, 12 Oct 2018 13:11:13 +0200
+
+libsejda-java (3.2.38-1) unstable; urgency=medium
+
+  * New upstream version 3.2.38.
+
+ -- Markus Koschany <apo@debian.org>  Sun, 26 Nov 2017 22:20:26 +0100
+
+libsejda-java (3.2.29-1) unstable; urgency=medium
+
+  * New upstream version 3.2.29.
+  * Declare compliance with Debian Policy 4.1.1.
+
+ -- Markus Koschany <apo@debian.org>  Fri, 13 Oct 2017 16:22:14 +0200
+
+libsejda-java (3.2.2-2) unstable; urgency=medium
+
+  * Drop xmlgraphics-commons.patch.
+
+ -- Markus Koschany <apo@debian.org>  Fri, 15 Sep 2017 23:10:18 +0200
+
+libsejda-java (3.2.2-1) unstable; urgency=medium
+
+  * New upstream version 3.2.2.
+  * get-orig-source: Remove --repack and --compression option.
+  * Declare compliance with Debian Policy 4.1.0.
+  * Tighten build-dependency on libsambox-java to >= 1.1.16.
+  * libsejda-java.poms: Remove --has-package-version.
+  * Refresh no-optional-fonts.patch.
+
+ -- Markus Koschany <apo@debian.org>  Thu, 14 Sep 2017 23:22:13 +0200
+
+libsejda-java (2.10.4-2) unstable; urgency=medium
+
+  * Build-depend on libsejda itself and drop use-local-jars.patch
+    which was necessary for boostrapping the library.
+
+ -- Markus Koschany <apo@debian.org>  Wed, 02 Aug 2017 19:09:55 +0200
+
+libsejda-java (2.10.4-1) unstable; urgency=medium
+
+  * Initial release (Closes: #866896).
+
+ -- Markus Koschany <apo@debian.org>  Thu, 06 Jul 2017 20:46:19 +0200

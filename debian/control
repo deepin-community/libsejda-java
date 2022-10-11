@@ -1,0 +1,45 @@
+Source: libsejda-java
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Markus Koschany <apo@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ default-jdk,
+ default-jdk-doc,
+ junit4,
+ libapache-poi-java,
+ libbcmail-java,
+ libbcprov-java,
+ libcommons-csv-java,
+ libcommons-io-java,
+ libcommons-lang3-java,
+ libgeronimo-validation-1.1-spec-java,
+ libimgscalr-java,
+ libmaven-javadoc-plugin-java,
+ libmetadata-extractor-java (>= 2.10.1),
+ libsambox-java (>= 2.2.19),
+# libsejda-java,
+ libsejda-commons-java,
+ libslf4j-java,
+ libtwelvemonkeys-java,
+ libxmlgraphics-commons-java,
+ maven-debian-helper (>= 2.1)
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/java-team/libsejda-java.git
+Vcs-Browser: https://salsa.debian.org/java-team/libsejda-java
+Homepage: http://sejda.org/
+
+Package: libsejda-java
+Architecture: all
+Depends:
+ ${maven:Depends},
+ ${misc:Depends}
+Suggests:
+ ${maven:OptionalDepends}
+Description: extendible PDF manipulation layer library written in Java
+ Sejda SDK is a task oriented PDF editor SDK library written in Java. It
+ offers a set of "ready to go" manipulations implemented using SAMBox but it is
+ also possible to provide your own implementation using iText, iText 5.x,
+ PDFBox or any other PDF engine and configure Sejda to use it.

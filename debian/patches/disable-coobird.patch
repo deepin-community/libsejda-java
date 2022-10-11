@@ -1,0 +1,39 @@
+From: Markus Koschany <apo@debian.org>
+Date: Tue, 7 Sep 2021 09:49:02 +0200
+Subject: disable coobird
+
+Necessary until thumbnailator has been packaged.
+---
+ .../main/java/org/sejda/impl/sambox/component/PageImageWriter.java  | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/sejda-sambox/src/main/java/org/sejda/impl/sambox/component/PageImageWriter.java b/sejda-sambox/src/main/java/org/sejda/impl/sambox/component/PageImageWriter.java
+index c762e2a..ee36edd 100644
+--- a/sejda-sambox/src/main/java/org/sejda/impl/sambox/component/PageImageWriter.java
++++ b/sejda-sambox/src/main/java/org/sejda/impl/sambox/component/PageImageWriter.java
+@@ -59,7 +59,7 @@ import org.sejda.sambox.util.filetypedetector.FileTypeDetector;
+ import org.slf4j.Logger;
+ import org.slf4j.LoggerFactory;
+ 
+-import net.coobird.thumbnailator.Thumbnails;
++//import net.coobird.thumbnailator.Thumbnails;
+ 
+ public class PageImageWriter {
+     private static final Logger LOG = LoggerFactory.getLogger(PageImageWriter.class);
+@@ -201,14 +201,14 @@ public class PageImageWriter {
+         int degrees = ExifHelper.getRotationBasedOnExifOrientation(source.asNewInputStream());
+ 
+         BufferedImage image = ImageIO.read(source.asNewInputStream());
+-        if (degrees > 0) {
++        /*if (degrees > 0) {
+             BufferedImage result = Thumbnails.of(image).scale(1).rotate(degrees).asBufferedImage();
+ 
+             File tmpFile = IOUtils.createTemporaryBuffer();
+             ImageIO.write(result, getImageIOSaveFormat(source), tmpFile);
+             return Optional.of(SeekableSources.seekableSourceFrom(tmpFile));
+ 
+-        }
++        }*/
+         return Optional.empty();
+     }
+ 

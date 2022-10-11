@@ -1,0 +1,17 @@
+
+com.twelvemonkeys.imageio imageio-core jar s/.*/debian/ * *
+com.twelvemonkeys.imageio imageio-jpeg jar s/.*/debian/ * *
+com.twelvemonkeys.imageio imageio-metadata jar s/.*/debian/ * *
+com.twelvemonkeys.imageio imageio-tiff jar s/.*/debian/ * *
+org.imgscalr imgscalr-lib jar s/.*/debian/ * *
+org.sejda sejda-conversion jar s/.*/debian/ * *
+org.sejda sejda-core jar s/.*/debian/ * *
+org.sejda sejda-docs pom s/.*/debian/ * *
+org.sejda sejda-image-writers jar s/.*/debian/ * *
+org.sejda sejda-model jar s/.*/debian/ * *
+org.sejda sejda-parent pom s/.*/debian/ * *
+s/javax.validation/org.apache.geronimo.specs/ s/validation-api/geronimo-validation_1.1_spec/ * s/.*/debian/ * *
+org.bouncycastle s/bcprov-jdk15on/bcprov/ * s/.*/debian/ * *
+org.bouncycastle s/bcmail-jdk15on/bcmail/ * s/.*/debian/ * *
+junit junit jar s/4\..*/4.x/ * *
+org.apache.xmlgraphics xmlgraphics-commons * s/.*/debian/ * *

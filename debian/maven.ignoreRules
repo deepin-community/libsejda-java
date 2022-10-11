@@ -1,0 +1,23 @@
+
+* * test-jar * * *
+org.sejda sejda-console jar * * *
+org.sejda sejda-distribution pom * * *
+org.sejda sejda-ocr jar * * *
+org.sejda sejda-optional-fonts jar * * *
+org.sejda sejda-example jar * * *
+org.sejda sejda-docs jar * * *
+ch.qos.logback logback-classic * * * *
+jdepend jdepend * * * *
+junit junit * * * *
+org.apache.maven.plugins maven-deploy-plugin * * * *
+org.apache.maven.plugins maven-install-plugin * * * *
+org.apache.maven.plugins maven-source-plugin * * * *
+org.apache.maven.plugins maven-toolchains-plugin * * * *
+org.hamcrest hamcrest-all * * * *
+org.hibernate hibernate-validator * * * *
+org.mockito mockito-all * * * *
+org.mockito mockito-core * * * *
+org.powermock powermock-module-junit4 * * * *
+org.powermock powermock-api-mockito * * * *
+org.codehaus.mojo appassembler-maven-plugin * * * *
+net.coobird thumbnailator * * * *
